@@ -8,7 +8,7 @@ import {
   RocketIcon, MailIcon, PhoneIcon, CodeIcon, SparkIcon, ServerIcon,
   ChartIcon, ZapIcon, LockIcon, LayersIcon, ActivityIcon,
 } from "../components/icons.jsx";
-import { QuoteButton } from "../components/brand.jsx";
+import { QuoteButton, StyleQuoteButton } from "../components/brand.jsx";
 import { SectionReveal, FadeIn, SectionHeader, glassCardClass } from "../components/ui.jsx";
 import { createMailLink } from "../lib/mail.js";
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_DISPLAY, STYLE_PREVIEW_NOTE } from "../lib/constants.js";
@@ -510,7 +510,7 @@ export function PricingSection() {
     </SectionReveal>
   );
 }
-export function MockupShell({ onBack, accent, navLinks, children, ctaLabel = "Build something like this", mailSubject }) {
+export function MockupShell({ onBack, accent, navLinks, children, ctaLabel = "Get a quote", mailSubject }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -530,9 +530,12 @@ export function MockupShell({ onBack, accent, navLinks, children, ctaLabel = "Bu
               </a>
             ))}
           </nav>
-          <Button asChild className="rounded-2xl bg-white text-slate-950 hover:bg-slate-200">
-            <a href={createMailLink(mailSubject)}>{ctaLabel}</a>
-          </Button>
+          <QuoteButton href={createMailLink(mailSubject)} className="hidden sm:inline-flex">
+            {ctaLabel}
+          </QuoteButton>
+          <QuoteButton href={createMailLink(mailSubject)} className="sm:hidden px-4 text-xs">
+            Quote
+          </QuoteButton>
         </motion.div>
       </header>
       <div className="relative z-40 border-b border-cyan-300/20 bg-cyan-400/10 px-6 py-3 text-center backdrop-blur-xl">
@@ -580,14 +583,15 @@ export function MiniWebsiteMockup({ mockup, index, onOpen }) {
         <div className="mt-6 flex flex-wrap gap-2">
           {mockup.chips.map((chip) => <span key={chip} className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-sm text-slate-200">{chip}</span>)}
         </div>
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-          <Button onClick={() => onOpen(mockup.id)} className="group rounded-2xl bg-white px-6 py-6 text-slate-950 hover:bg-slate-200">
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+          <Button
+            onClick={() => onOpen(mockup.id)}
+            className="group inline-flex h-auto items-center justify-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-bold text-slate-950 shadow-lg shadow-black/20 transition hover:bg-slate-200"
+          >
             Preview this style
-            <ArrowRightIcon className="ml-2 h-4 w-4 transition group-hover:translate-x-1" />
+            <ArrowRightIcon className="h-4 w-4 transition group-hover:translate-x-0.5" />
           </Button>
-          <Button asChild variant="outline" className="rounded-2xl border-white/20 bg-white/5 px-6 py-6 text-white hover:bg-white/10 hover:text-white">
-            <a href={createMailLink(`Website inspired by ${mockup.service}`)}>Build something like this</a>
-          </Button>
+          <StyleQuoteButton href={createMailLink(`Website inspired by ${mockup.service}`)} />
         </div>
         <p className="mt-4 text-xs leading-6 text-slate-500">Any industry, any brand — this is only a visual starting point.</p>
       </div>
@@ -665,7 +669,11 @@ export function NorthlineAutoPage({ onBack }) {
         <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} className="absolute right-8 top-28 hidden rounded-2xl border border-cyan-300/20 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-100 backdrop-blur-xl md:block">
           Same-week booking available
         </motion.div>
-        <motion.div animate={{ y: [0, 12, 0] }} transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }} className="absolute left-8 top-40 hidden rounded-2xl border border-white/10 bg-white/10 px-4 py-2 text-sm backdrop-blur-xl md:block">
+        <motion.div
+          animate={{ y: [0, 12, 0] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          className="pointer-events-none absolute left-1/2 top-28 z-20 hidden -translate-x-1/2 rounded-2xl border border-white/10 bg-slate-950/80 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-lg shadow-black/30 backdrop-blur-xl md:block lg:top-32"
+        >
           4.9★ · 500+ vehicles detailed
         </motion.div>
 

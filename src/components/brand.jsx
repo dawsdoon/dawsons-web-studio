@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { StudioLogoIcon, ArrowRightIcon } from "./icons.jsx";
+import { StudioLogoIcon, ArrowRightIcon, MailIcon } from "./icons.jsx";
 import { createMailLink } from "../lib/mail.js";
 
 export function BrandLogo({ className = "" }) {
@@ -25,6 +25,22 @@ export function QuoteButton({ href, children = "Get a Quote", className = "" }) 
       <a href={href || createMailLink("Website Quote Request")}>
         {children}
         <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+      </a>
+    </Button>
+  );
+}
+
+/** Secondary CTA for style previews — pairs with the primary “Preview” action */
+export function StyleQuoteButton({ href, children = "Quote this style", className = "" }) {
+  return (
+    <Button
+      asChild
+      className={`group inline-flex h-auto items-center justify-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-500/10 px-5 py-2.5 text-sm font-semibold text-cyan-50 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm transition duration-300 hover:border-cyan-200/55 hover:bg-cyan-400/20 hover:text-white ${className}`}
+    >
+      <a href={href || createMailLink("Website Quote Request")}>
+        <MailIcon className="h-4 w-4 shrink-0 text-cyan-200/90" />
+        <span>{children}</span>
+        <ArrowRightIcon className="h-4 w-4 shrink-0 text-cyan-200/90 transition-transform duration-300 group-hover:translate-x-0.5" />
       </a>
     </Button>
   );
