@@ -26,8 +26,8 @@ export function FullStudioSection() {
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_0%,rgba(34,211,238,0.14),transparent_45%)]" />
       <SectionHeader
         eyebrow="Full-service web studio"
-        title="One partner from design through hosting — with clear package pricing"
-        description="I design, build, and launch your site, then can keep hosting and routine updates on a simple care plan. Landings from $350, redesigns from $600, full business sites at $1,000 — all with one studio invoice for hosting."
+        title="One partner from design through hosting, with clear package pricing"
+        description="I design, build, and launch your site, then can keep hosting and routine updates on a simple care plan. Landings from $350, redesigns from $600, full business sites at $1,000, all with one studio invoice for hosting."
       />
       <div className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {studioPipeline.map((step, index) => {
@@ -56,7 +56,7 @@ export function FullStudioSection() {
       </div>
       <FadeIn className="mx-auto mt-12 max-w-4xl">
         <motion.div className="rounded-[2rem] border border-cyan-300/25 bg-gradient-to-r from-cyan-400/10 via-blue-500/10 to-violet-500/10 p-8 text-center backdrop-blur-xl md:p-10">
-          <p className="text-lg font-semibold text-white md:text-xl">Tell me about your business and I will recommend the right fit — a quick landing, starter site, redesign, or full Business Studio build.</p>
+          <p className="text-lg font-semibold text-white md:text-xl">Tell me about your business and I will recommend the right fit, a quick landing, starter site, redesign, or full Business Studio build.</p>
           <motion.div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
             <QuoteButton href={createMailLink("Website Quote Request")} />
             <Button asChild variant="outline" className="rounded-full border-white/20 bg-white/5 px-6 py-2.5 text-white hover:bg-white/10 hover:text-white">
@@ -74,8 +74,8 @@ export function CapabilitiesSection({ items = capabilities, compact = false }) {
     <SectionReveal id="capabilities" className="mx-auto max-w-7xl px-6 py-20 md:py-28">
       <SectionHeader
         eyebrow="What I handle for you"
-        title="Build, launch, and support — scoped to real packages"
-        description="Not every service is on every tier — but you always get a clear scope. Builds cover design through launch; care plans cover hosting, checkups, and routine edits on one monthly bill."
+        title="Build, launch, and support, scoped to real packages"
+        description="Not every service is on every tier, but you always get a clear scope. Builds cover design through launch; care plans cover hosting, checkups, and routine edits on one monthly bill."
       />
       <div className="mx-auto grid max-w-6xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item, index) => {
@@ -152,7 +152,7 @@ export function OperationsDashboardSection() {
         <div>
           <SectionHeader
             eyebrow="Growth & reliability"
-            title="SEO and analytics where they belong — not bundled into every tier"
+            title="SEO and analytics where they belong, not bundled into every tier"
             description="Every build gets SEO basics and SSL. Business Studio adds Google Analytics and a launch performance pass; Care Plus adds monitoring, analytics check-ins, and SEO tune-ups over time."
             centered={false}
           />
@@ -235,10 +235,10 @@ export function HostingMaintenanceSection() {
           </div>
           <div className="space-y-4">
             {[
-              { icon: ServerIcon, title: "Hosting on one bill", text: "Domain, hosting, and SSL through Dawson's Web Studio — included on care plans." },
+              { icon: ServerIcon, title: "Hosting on one bill", text: "Domain, hosting, and SSL through Dawson's Web Studio, included on care plans." },
               { icon: ActivityIcon, title: "Uptime monitoring", text: "Included on Care Plus so issues get flagged before customers notice." },
               { icon: LockIcon, title: "Backups & checkups", text: "Monthly health checkups and backups on Care Essentials and Care Plus." },
-              { icon: WrenchIcon, title: "Routine edits", text: "Text, photos, hours, and promos — help included on care plans, not on one-time builds alone." },
+              { icon: WrenchIcon, title: "Routine edits", text: "Text, photos, hours, and promos, help included on care plans, not on one-time builds alone." },
             ].map((row, i) => {
               const RowIcon = row.icon;
               return (
@@ -266,7 +266,7 @@ export function ShowcaseSection() {
       <SectionHeader
         eyebrow="Why work with the studio"
         title="Premium results without agency pricing or confusion"
-        description="Clear packages, one hosting invoice, and a site that looks modern on mobile — built for local owners who want it done right, not DIY."
+        description="Clear packages, one hosting invoice, and a site that looks modern on mobile, built for local owners who want it done right, not DIY."
       />
       <div className="mx-auto grid max-w-6xl auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {showcases.map((item, index) => (
@@ -307,7 +307,7 @@ export function ServicesSection() {
         revealOnMount
         eyebrow="Matches your package"
         title="Style previews for landing pages, redesigns, and business sites"
-        description="Fictional examples only — they map to Quick Landing, Website Redesign, and Starter/Business Studio quality. Your final site is custom to your industry."
+        description="Fictional examples only, they map to Quick Landing, Website Redesign, and Starter/Business Studio quality. Your final site is custom to your industry."
       />
       <motion.div className="mx-auto grid max-w-5xl gap-5 md:grid-cols-3">
         {serviceMockups.map((mockup, index) => (
@@ -344,7 +344,7 @@ export function ProcessSection() {
     <SectionReveal id="process" className="mx-auto max-w-7xl px-6 py-20 md:py-28">
       <SectionHeader
         eyebrow="How it works"
-        title="From first call to launch — then care if you want it"
+        title="From first call to launch, then care if you want it"
         description="Pick a build package, go live with one hosting invoice, and add Care Essentials or Care Plus only if you want ongoing help."
       />
       <motion.div className="mx-auto grid max-w-6xl auto-rows-fr gap-5 sm:grid-cols-2 xl:grid-cols-3">
@@ -385,7 +385,7 @@ export function ComparisonCell({ value }) {
     return <CheckCircleIcon className="mx-auto h-4 w-4 text-cyan-200" />;
   }
   if (value === false) {
-    return <span className="text-slate-600">—</span>;
+    return <span className="text-slate-600">-</span>;
   }
   return <span className="text-xs text-slate-300 md:text-sm">{value}</span>;
 }
@@ -434,7 +434,7 @@ export function PricingSection() {
       <SectionHeader
         revealOnMount
         eyebrow="Packages & pricing"
-        title="Clear local packages — one invoice for hosting"
+        title="Clear local packages, one invoice for hosting"
         description="Websites from $350 · Redesigns from $600 · Full business sites $1,000 · Ongoing care from $40/mo. Domain and hosting run through Dawson's Web Studio so you get one bill."
       />
 
@@ -521,7 +521,7 @@ export function MockupShell({ onBack, accent, navLinks, children, ctaLabel = "Ge
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/60 backdrop-blur-2xl">
         <motion.div initial={{ y: -16, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
           <button type="button" onClick={onBack} className="rounded-2xl border border-white/15 bg-white/10 px-4 py-2.5 text-sm font-semibold transition hover:bg-white/20">
-            ← Portfolio
+            ← Examples
           </button>
           <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
             {navLinks.map((link) => (
@@ -553,7 +553,7 @@ export function MockupsSection() {
       <SectionHeader
         eyebrow="Style previews"
         title="See what your website could feel like"
-        description="Three fictional layouts — landing page, redesign, and business site quality. Click through for inspiration; your site is custom to your brand."
+        description="Three fictional layouts, landing page, redesign, and business site quality. Click through for inspiration; your site is custom to your brand."
       />
       <FadeIn className="mx-auto mb-10 max-w-3xl">
         <motion.div className="rounded-2xl border border-cyan-300/25 bg-cyan-400/10 px-6 py-5 text-center backdrop-blur-xl">
@@ -593,7 +593,7 @@ export function MiniWebsiteMockup({ mockup, index, onOpen }) {
           </Button>
           <StyleQuoteButton href={createMailLink(`Website inspired by ${mockup.service}`)} />
         </div>
-        <p className="mt-4 text-xs leading-6 text-slate-500">Any industry, any brand — this is only a visual starting point.</p>
+        <p className="mt-4 text-xs leading-6 text-slate-500">Any industry, any brand, this is only a visual starting point.</p>
       </div>
       <motion.button type="button" onClick={() => onOpen(mockup.id)} whileHover={{ y: -8, rotate: reversed ? -1 : 1 }} transition={{ type: "spring", stiffness: 180, damping: 16 }} className="w-full min-w-0 text-left">
         <Card className="overflow-hidden rounded-[2rem] border-white/10 bg-slate-950/80 shadow-2xl shadow-black/40">
@@ -687,7 +687,7 @@ export function NorthlineAutoPage({ onBack }) {
               <span className="block bg-gradient-to-r from-cyan-200 to-blue-400 bg-clip-text text-transparent">Delivered to your driveway.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-              Northline Auto Detailing helps busy owners restore vehicles with professional interior resets, exterior gloss packages, and ceramic protection — all booked online in minutes.
+              Northline Auto Detailing helps busy owners restore vehicles with professional interior resets, exterior gloss packages, and ceramic protection, all booked online in minutes.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button className="rounded-2xl bg-cyan-400 px-8 py-7 font-bold text-slate-950 hover:bg-cyan-300">
@@ -733,7 +733,7 @@ export function NorthlineAutoPage({ onBack }) {
         <FadeIn className="mb-12 max-w-2xl">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Services</p>
           <h2 className="text-4xl font-black md:text-5xl">Packages built for real vehicle owners</h2>
-          <p className="mt-4 text-lg text-slate-400">Clear service cards, transparent pricing, and strong calls-to-action — exactly what a local service business needs to convert visitors.</p>
+          <p className="mt-4 text-lg text-slate-400">Clear service cards, transparent pricing, and strong calls-to-action, exactly what a local service business needs to convert visitors.</p>
         </FadeIn>
         <motion.div className="grid gap-6 md:grid-cols-3">
           {services.map((svc, i) => (
@@ -837,13 +837,13 @@ export function NorthlineAutoPage({ onBack }) {
         <FadeIn>
           <motion.div whileHover={{ scale: 1.01 }} className="rounded-[2.5rem] border border-cyan-300/30 bg-gradient-to-br from-cyan-500/20 via-slate-900 to-slate-950 p-12 text-center shadow-2xl">
             <h2 className="text-4xl font-black md:text-5xl">Ready for a spotless vehicle?</h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">Pick a package, choose a time, and Northline comes to you — this is how a modern local business website should convert.</p>
+            <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">Pick a package, choose a time, and Northline comes to you, this is how a modern local business website should convert.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild className="rounded-2xl bg-cyan-400 px-8 py-7 font-bold text-slate-950 hover:bg-cyan-300">
                 <a href={createMailLink("Northline Style Booking Flow")}>Book now</a>
               </Button>
               <Button onClick={onBack} variant="outline" className="rounded-2xl border-white/20 bg-white/5 px-8 py-7 text-white hover:bg-white/10">
-                Back to portfolio
+                Back to examples
               </Button>
             </div>
           </motion.div>
@@ -872,7 +872,7 @@ export function PrairieDentalPage({ onBack }) {
             </p>
             <h1 className="text-5xl font-black tracking-tight md:text-7xl">Prairie Dental Care</h1>
             <p className="mx-auto mt-6 max-w-3xl text-xl leading-9 text-slate-300">
-              See how an outdated clinic website becomes modern, trustworthy, and easy for patients to book — the kind of transformation local business owners instantly understand.
+              See how an outdated clinic website becomes modern, trustworthy, and easy for patients to book, the kind of transformation local business owners instantly understand.
             </p>
           </FadeIn>
         </div>
@@ -881,7 +881,7 @@ export function PrairieDentalPage({ onBack }) {
       <section id="dental-compare" className="mx-auto max-w-7xl px-6 py-20">
         <FadeIn className="mb-14 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-violet-300">Full comparison</p>
-          <h2 className="text-4xl font-black md:text-6xl">Before vs after — side by side</h2>
+          <h2 className="text-4xl font-black md:text-6xl">Before vs after, side by side</h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-400">Not tiny placeholders. Full realistic layouts that show cramped outdated design versus a premium patient experience.</p>
         </FadeIn>
 
@@ -977,7 +977,7 @@ export function PrairieDentalPage({ onBack }) {
                 <div className="bg-gradient-to-br from-teal-500 to-emerald-600 px-8 py-12 text-white">
                   <p className="text-sm font-semibold text-teal-100">Family & cosmetic dentistry</p>
                   <h3 className="mt-3 text-3xl font-black leading-tight md:text-4xl">Gentle care. Modern comfort. Same-week appointments.</h3>
-                  <p className="mt-4 max-w-md text-sm leading-7 text-teal-50">A calming, professional experience from the first click — built to help nervous patients feel confident booking online.</p>
+                  <p className="mt-4 max-w-md text-sm leading-7 text-teal-50">A calming, professional experience from the first click, built to help nervous patients feel confident booking online.</p>
                   <div className="mt-8 flex gap-3">
                     <span className="rounded-2xl bg-white px-5 py-3 text-sm font-bold text-teal-800">Schedule online</span>
                     <span className="rounded-2xl border border-white/40 px-5 py-3 text-sm font-semibold">Meet our team</span>
@@ -994,7 +994,7 @@ export function PrairieDentalPage({ onBack }) {
                 </div>
                 <div className="mx-6 mb-6 rounded-2xl bg-slate-50 p-5">
                   <p className="text-sm font-medium text-slate-700">"The new site feels so much more professional. I booked my cleaning in under a minute."</p>
-                  <p className="mt-2 text-xs text-teal-600">— Patient review</p>
+                  <p className="mt-2 text-xs text-teal-600">Patient review</p>
                 </div>
               </div>
               <ul className="mt-6 space-y-2 text-sm text-emerald-900">
@@ -1014,7 +1014,7 @@ export function PrairieDentalPage({ onBack }) {
         <div className="mx-auto max-w-7xl px-6">
           <FadeIn className="mb-12 text-center">
             <h2 className="text-4xl font-black md:text-5xl">What the redesign fixes</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-slate-400">Business owners don't need design jargon — they need to see trust, clarity, and easier patient actions.</p>
+            <p className="mx-auto mt-4 max-w-2xl text-slate-400">Business owners don't need design jargon, they need to see trust, clarity, and easier patient actions.</p>
           </FadeIn>
           <div className="grid gap-6 md:grid-cols-3">
             {[
@@ -1034,13 +1034,13 @@ export function PrairieDentalPage({ onBack }) {
       <section id="dental-cta" className="mx-auto max-w-5xl px-6 py-28 text-center">
         <FadeIn>
           <h2 className="text-4xl font-black md:text-5xl">Want this transformation for your business?</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-400">This concept proves redesign value visually — perfect for convincing owners their outdated site is costing them trust.</p>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-400">This concept proves redesign value visually, perfect for convincing owners their outdated site is costing them trust.</p>
           <motion.div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <Button asChild className="rounded-2xl bg-violet-400 px-8 py-7 font-bold text-slate-950 hover:bg-violet-300">
               <a href={createMailLink("Dental Redesign Project")}>Start a redesign</a>
             </Button>
             <Button onClick={onBack} variant="outline" className="rounded-2xl border-white/20 bg-white/5 px-8 py-7 text-white hover:bg-white/10">
-              Back to portfolio
+              Back to examples
             </Button>
           </motion.div>
         </FadeIn>
@@ -1074,11 +1074,11 @@ export function PeakFitPage({ onBack }) {
               <span className="block">30 days.</span>
             </h1>
             <p className="mt-6 max-w-lg text-lg font-medium leading-8 text-slate-900/80">
-              Busy schedule? No problem. PeakFit gives you a structured plan, meal guide, and weekly coach check-ins — built for beginners who want results without guesswork.
+              Busy schedule? No problem. PeakFit gives you a structured plan, meal guide, and weekly coach check-ins, built for beginners who want results without guesswork.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button className="rounded-2xl bg-slate-950 px-8 py-7 text-lg font-bold text-white shadow-xl hover:bg-slate-800">
-                Join the challenge — $49
+                Join the challenge for $49
               </Button>
               <Button asChild variant="outline" className="rounded-2xl border-slate-900/30 bg-white/30 px-8 py-7 font-semibold text-slate-950 backdrop-blur hover:bg-white/50">
                 <a href="#peak-benefits">See what's included</a>
@@ -1098,7 +1098,7 @@ export function PeakFitPage({ onBack }) {
               <div className="rounded-[2rem] bg-slate-950 p-8 text-white">
                 <p className="text-xs font-bold uppercase tracking-widest text-lime-300">Your week 1 preview</p>
                 <div className="mt-6 space-y-4">
-                  {["Mon — Full body ignite", "Wed — Core + cardio", "Fri — Strength builder"].map((day, i) => (
+                  {["Mon: Full body ignite", "Wed: Core + cardio", "Fri: Strength builder"].map((day, i) => (
                     <motion.div key={day} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 + i * 0.1 }} whileHover={{ x: 6 }} className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
                       <span className="font-semibold">{day}</span>
                       <span className="rounded-full bg-lime-400 px-3 py-1 text-xs font-bold text-slate-950">45 min</span>
@@ -1106,7 +1106,7 @@ export function PeakFitPage({ onBack }) {
                   ))}
                 </div>
                 <motion.div animate={{ opacity: [0.7, 1, 0.7] }} transition={{ duration: 2, repeat: Infinity }} className="mt-8 rounded-2xl bg-gradient-to-r from-lime-400 to-emerald-400 p-4 text-center font-black text-slate-950">
-                  Spots filling fast — 12 left
+                  Spots filling fast, 12 left
                 </motion.div>
               </div>
             </motion.div>
@@ -1118,12 +1118,12 @@ export function PeakFitPage({ onBack }) {
         <div className="mx-auto max-w-7xl px-6">
           <FadeIn className="mb-12 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-lime-300">Everything included</p>
-            <h2 className="text-4xl font-black text-white md:text-5xl">Built to convert — not just look good</h2>
+            <h2 className="text-4xl font-black text-white md:text-5xl">Built to convert, not just look good</h2>
           </FadeIn>
           <div className="grid gap-6 md:grid-cols-3">
             {[
               { title: "30-day workout plan", text: "Follow-along videos with clear progressions so beginners never feel lost." },
-              { title: "Simple meal guide", text: "No extreme diets — just realistic meals that support energy and fat loss." },
+              { title: "Simple meal guide", text: "No extreme diets, just realistic meals that support energy and fat loss." },
               { title: "Weekly coach check-ins", text: "Accountability messages keep participants on track through the full challenge." },
             ].map((b, i) => (
               <motion.div key={b.title} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} whileHover={{ y: -8, borderColor: "rgba(163,230,53,0.5)" }} className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
@@ -1143,13 +1143,13 @@ export function PeakFitPage({ onBack }) {
           <FadeIn className="grid gap-12 md:grid-cols-2 md:items-center">
             <div>
               <h2 className="text-4xl font-black text-white md:text-5xl">Real results. Real social proof.</h2>
-              <p className="mt-4 text-lg text-slate-400">Landing pages win with repetition — benefits, proof, urgency, and CTAs stacked with modern motion.</p>
+              <p className="mt-4 text-lg text-slate-400">Landing pages win with repetition, benefits, proof, urgency, and CTAs stacked with modern motion.</p>
             </div>
             <div className="space-y-4">
               {[
                 { q: "I lost 11 lbs and finally have a routine I can stick to.", n: "Alex M." },
                 { q: "The page made the challenge feel legit. Signing up took 30 seconds.", n: "Jordan K." },
-                { q: "Best $49 I've spent on fitness — clear plan every single day.", n: "Taylor S." },
+                { q: "Best $49 I've spent on fitness, clear plan every single day.", n: "Taylor S." },
               ].map((t, i) => (
                 <motion.div key={t.n} initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="rounded-2xl border border-lime-400/20 bg-lime-400/5 p-6 backdrop-blur">
                   <p className="text-lg text-white/90">"{t.q}"</p>
@@ -1165,13 +1165,13 @@ export function PeakFitPage({ onBack }) {
         <div className="absolute inset-0 bg-gradient-to-r from-lime-400 via-emerald-500 to-teal-500" />
         <FadeIn className="relative mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-4xl font-black text-slate-950 md:text-6xl">Ready to start your 30 days?</h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-slate-900/80">This is the kind of high-energy landing page that makes offers feel exciting — perfect for campaigns, challenges, and product launches.</p>
+          <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-slate-900/80">This is the kind of high-energy landing page that makes offers feel exciting, perfect for campaigns, challenges, and product launches.</p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <Button asChild className="rounded-2xl bg-slate-950 px-10 py-7 text-lg font-bold text-white hover:bg-slate-800">
-              <a href={createMailLink("PeakFit Style Landing Page")}>Join now — $49</a>
+              <a href={createMailLink("PeakFit Style Landing Page")}>Join now for $49</a>
             </Button>
             <Button onClick={onBack} variant="outline" className="rounded-2xl border-slate-900/40 bg-white/30 px-8 py-7 font-semibold text-slate-950 hover:bg-white/50">
-              Back to portfolio
+              Back to examples
             </Button>
           </div>
         </FadeIn>
@@ -1217,7 +1217,7 @@ export function ContactSection() {
       <motion.div className="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-2xl shadow-black/30 backdrop-blur-xl md:p-12">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-200">Start here</p>
         <h2 className="text-4xl font-black tracking-tight md:text-6xl">Not sure which package fits?</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-slate-300">Tell me about your business — new site, redesign, or one-page promo — and I will point you to the right package or a custom quote.</p>
+        <p className="mx-auto mt-4 max-w-2xl text-slate-300">Tell me about your business, new site, redesign, or one-page promo, and I will point you to the right package or a custom quote.</p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <Button asChild className="group rounded-2xl bg-white px-6 py-6 text-slate-950 shadow-xl shadow-cyan-500/20 hover:bg-slate-200">
             <a href={createMailLink("Website Project Inquiry")}>

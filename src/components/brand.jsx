@@ -30,7 +30,7 @@ export function QuoteButton({ href, children = "Get a Quote", className = "" }) 
   );
 }
 
-/** Secondary CTA for style previews — pairs with the primary “Preview” action */
+/** Secondary CTA for style previews, pairs with the primary “Preview” action */
 export function StyleQuoteButton({ href, children = "Quote this style", className = "" }) {
   return (
     <Button

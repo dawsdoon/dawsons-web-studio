@@ -16,27 +16,27 @@ import {
 } from "../components/icons.jsx";
 
 export const studioPipeline = [
-  { icon: SparkIcon, label: "Design", desc: "Custom layout and brand feel — sized to your package, not a cookie-cutter template." },
-  { icon: CodeIcon, label: "Build", desc: "Mobile-first pages built clean and fast — from a one-page landing to a full business site." },
+  { icon: SparkIcon, label: "Design", desc: "Custom layout and brand feel, sized to your package, not a cookie-cutter template." },
+  { icon: CodeIcon, label: "Build", desc: "Mobile-first pages built clean and fast, from a one-page landing to a full business site." },
   { icon: RocketIcon, label: "Deploy", desc: "Forms, CTAs, SSL, and launch QA so customers can actually reach you." },
-  { icon: ServerIcon, label: "Host", desc: "Domain and hosting set up through Dawson's Web Studio — one invoice, no extra vendors." },
+  { icon: ServerIcon, label: "Host", desc: "Domain and hosting set up through Dawson's Web Studio, one invoice, no extra vendors." },
   { icon: ShieldCheckIcon, label: "Protect", desc: "SSL on every launch; backups and monthly checkups on care plans from $40/mo." },
   { icon: WrenchIcon, label: "Support", desc: "Routine text, photo, and hour updates handled when you are on a care plan." },
 ];
 
 export const capabilities = [
   { icon: SparkIcon, title: "Custom website design", desc: "Landings from $350, starter sites from $550, redesigns from $600, and full builds at $1,000.", accent: "from-cyan-400/25 to-blue-600/10" },
-  { icon: CodeIcon, title: "Mobile-first development", desc: "Every package is built to look professional on phones — where most local customers browse.", accent: "from-sky-400/25 to-indigo-600/10" },
-  { icon: LayersIcon, title: "Website redesigns", desc: "Same business, modern look — typically $600–$800 depending on your current site size.", accent: "from-violet-400/25 to-purple-600/10" },
+  { icon: CodeIcon, title: "Mobile-first development", desc: "Every package is built to look professional on phones, where most local customers browse.", accent: "from-sky-400/25 to-indigo-600/10" },
+  { icon: LayersIcon, title: "Website redesigns", desc: "Same business, modern look, typically $600–$800 depending on your current site size.", accent: "from-violet-400/25 to-purple-600/10" },
   { icon: ServerIcon, title: "Hosting on one invoice", desc: "I set up hosting and bill through the studio so you are not juggling separate providers.", accent: "from-emerald-400/25 to-teal-600/10" },
-  { icon: GlobeIcon, title: "Domain & SSL setup", desc: "DNS, SSL, and domain connection handled at launch — included on every build package.", accent: "from-blue-400/25 to-cyan-600/10" },
+  { icon: GlobeIcon, title: "Domain & SSL setup", desc: "DNS, SSL, and domain connection handled at launch, included on every build package.", accent: "from-blue-400/25 to-cyan-600/10" },
   { icon: WrenchIcon, title: "Care plans from $40/mo", desc: "Hosting, checkups, backups, and help with routine edits after your site is live.", accent: "from-fuchsia-400/25 to-pink-600/10" },
   { icon: MailIcon, title: "Support after launch", desc: "Email support on every build; care plans add priority help and faster turnaround.", accent: "from-amber-400/20 to-orange-600/10" },
   { icon: ChartIcon, title: "SEO & analytics", desc: "Basic SEO on all builds; Google Analytics on Business Studio and ongoing check-ins on Care Plus.", accent: "from-lime-400/20 to-emerald-600/10" },
   { icon: ActivityIcon, title: "Uptime monitoring", desc: "Included on Care Plus ($60/mo) so problems get caught before customers notice.", accent: "from-rose-400/20 to-red-600/10" },
   { icon: LockIcon, title: "Backups & security", desc: "Launch-time hygiene on new builds; ongoing backups and checkups on care plans.", accent: "from-slate-300/15 to-slate-600/10" },
   { icon: ZapIcon, title: "Performance", desc: "Solid speed on every build; a full performance pass included on Business Studio.", accent: "from-yellow-300/20 to-amber-600/10" },
-  { icon: CheckCircleIcon, title: "Content updates", desc: "Hours, services, photos, and promos — routine changes handled on Care Essentials and Care Plus.", accent: "from-cyan-300/20 to-blue-600/10" },
+  { icon: CheckCircleIcon, title: "Content updates", desc: "Hours, services, photos, and promos, routine changes handled on Care Essentials and Care Plus.", accent: "from-cyan-300/20 to-blue-600/10" },
 ];
 
 export const capabilitiesHighlight = capabilities.slice(0, 6);
@@ -44,15 +44,15 @@ export const capabilitiesHighlight = capabilities.slice(0, 6);
 export const trustInsights = [
   { stat: "75%", title: "Credibility starts with design", text: "Visitors decide whether they trust a business in seconds. An outdated site quietly costs you leads.", icon: SparkIcon },
   { stat: "61%", title: "Mobile is non-negotiable", text: "If your site feels broken on a phone, customers leave for a competitor who looks more professional.", icon: GlobeIcon },
-  { stat: "53%", title: "Speed kills conversions", text: "Slow pages feel untrustworthy. Performance work is not nerdy — it is revenue protection.", icon: ZapIcon },
+  { stat: "53%", title: "Speed kills conversions", text: "Slow pages feel untrustworthy. Performance work is not nerdy. It is revenue protection.", icon: ZapIcon },
   { stat: "2×", title: "Redesigns rebuild trust", text: "Modern layout, clear messaging, and strong visuals make local businesses feel established instantly.", icon: LayersIcon },
 ];
 
 export const whyChooseStudio = [
   "One invoice for hosting and routine updates through the studio",
-  "Clear packages — $350 landing · $550 starter · $600+ redesign · $1,000 full build",
-  "Premium look without agency pricing — this site shows the standard",
-  "Local and reachable — not a faceless template shop",
+  "Clear packages, $350 landing · $550 starter · $600+ redesign · $1,000 full build",
+  "Premium look without agency pricing, this site shows the standard",
+  "Local and reachable, not a faceless template shop",
   "Care from $40/mo when you want edits handled for you",
 ];
 
@@ -118,10 +118,10 @@ export const packageComparison = [
 ];
 
 export const process = [
-  { icon: MailIcon, title: "1. Discover", text: "We talk goals, pages, and budget — then match you to Quick Landing, Starter, Redesign, or Business Studio." },
+  { icon: MailIcon, title: "1. Discover", text: "We talk goals, pages, and budget, then match you to Quick Landing, Starter, Redesign, or Business Studio." },
   { icon: SparkIcon, title: "2. Design", text: "Custom layout and visual direction that fit your business, not a generic theme." },
-  { icon: CodeIcon, title: "3. Build", text: "Mobile-first development with clean structure — scoped to the package you chose." },
-  { icon: RocketIcon, title: "4. Deploy", text: "Domain, hosting, forms, SSL, and testing — billed through one studio invoice." },
+  { icon: CodeIcon, title: "3. Build", text: "Mobile-first development with clean structure, scoped to the package you chose." },
+  { icon: RocketIcon, title: "4. Deploy", text: "Domain, hosting, forms, SSL, and testing, billed through one studio invoice." },
   { icon: ServerIcon, title: "5. Host & grow", text: "SEO basics on every build; analytics and a performance pass on Business Studio. Care Plus adds monitoring." },
   { icon: WrenchIcon, title: "6. Care optional", text: "Stay on Care Essentials ($40/mo) or Care Plus ($60/mo) for hosting, backups, and help with updates." },
 ];
@@ -134,7 +134,7 @@ export const serviceMockups = [
     label: "Local business website",
     business: "Northline Auto Detailing",
     headline: "Premium mobile detailing that makes every vehicle feel showroom-ready.",
-    subtext: "Fictional example of a Starter or Business Studio layout — your site can match this quality for any trade.",
+    subtext: "Fictional example of a Starter or Business Studio layout, your site can match this quality for any trade.",
     cta: "Book a detail",
     accent: "from-cyan-300 via-blue-500 to-slate-950",
     palette: "cyan",
@@ -156,7 +156,7 @@ export const serviceMockups = [
     label: "Before vs after redesign",
     business: "Prairie Dental Care",
     headline: "Transform an outdated business website into something modern, clean, and trustworthy.",
-    subtext: "Fictional before-and-after — the kind of upgrade Website Redesign delivers, usually $600–$800.",
+    subtext: "Fictional before-and-after, the kind of upgrade Website Redesign delivers, usually $600–$800.",
     cta: "View redesign",
     accent: "from-violet-300 via-purple-500 to-slate-950",
     palette: "violet",
@@ -178,7 +178,7 @@ export const serviceMockups = [
     label: "Campaign landing page",
     business: "PeakFit 30-Day Challenge",
     headline: "A focused 30-day fitness challenge built for busy people who want structure.",
-    subtext: "Fictional campaign page — similar to Quick Landing ($350) for promos, events, or limited-time offers.",
+    subtext: "Fictional campaign page, similar to Quick Landing ($350) for promos, events, or limited-time offers.",
     cta: "Join the challenge",
     accent: "from-lime-300 via-emerald-500 to-slate-950",
     palette: "emerald",

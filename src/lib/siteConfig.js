@@ -1,5 +1,5 @@
 /**
- * Studio brand — confirmed 2026-05-17.
+ * Studio brand, confirmed 2026-05-17.
  * Decision: keep "Dawson's Web Studio" (no rebrand).
  */
 export const STUDIO_NAME = "Dawson's Web Studio";

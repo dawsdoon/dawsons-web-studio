@@ -8,7 +8,7 @@ import { MailIcon } from "../components/icons.jsx";
 const navLinks = [
   { to: "/", label: "Home", end: true },
   { to: "/pricing", label: "Pricing" },
-  { to: "/work", label: "Work" },
+  { to: "/work", label: "Examples" },
   { to: "/contact", label: "Contact" },
 ];
 

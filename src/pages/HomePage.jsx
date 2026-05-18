@@ -15,11 +15,11 @@ export default function HomePage() {
         <motion.div initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65 }}>
           <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.1 }} className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm text-slate-200 shadow-lg shadow-black/20 backdrop-blur-xl">
             <SparkIcon className="h-4 w-4" />
-            Websites for local businesses — clear packages
+            Websites for local businesses. Clear packages.
           </motion.p>
-          <h1 className="text-5xl font-black tracking-tight md:text-7xl">Design, build, launch & host — one studio, one bill.</h1>
+          <h1 className="text-5xl font-black tracking-tight md:text-7xl">Design, build, launch & host. One studio, one bill.</h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-            Landings from $350, redesigns from $600, full business sites at $1,000. I handle design, development, domain, and hosting through Dawson's Web Studio — plus optional care from $40/mo when you want updates handled for you.
+            Landings from $350, redesigns from $600, full business sites at $1,000. I handle design, development, domain, and hosting through Dawson's Web Studio, plus optional care from $40/mo when you want updates handled for you.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild className="group rounded-2xl bg-white px-6 py-6 text-slate-950 shadow-xl shadow-cyan-500/20 hover:bg-slate-200">

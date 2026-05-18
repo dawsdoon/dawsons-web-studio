@@ -17,7 +17,7 @@ export default function MockupPage() {
       <div className="text-center">
         <p className="text-lg">Style preview not found.</p>
         <button type="button" onClick={onBack} className="mt-4 text-cyan-200 underline">
-          Back to work
+          Back to examples
         </button>
       </div>
     </div>

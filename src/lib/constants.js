@@ -7,7 +7,7 @@ export {
 } from "./siteConfig.js";
 
 export const STYLE_PREVIEW_NOTE =
-  "Sample designs only — fictional businesses shown to demonstrate quality and style. Your site can be fully custom for any industry, brand, or layout you need.";
+  "Sample designs only, fictional businesses shown to demonstrate quality and style. Your site can be fully custom for any industry, brand, or layout you need.";
 
 export const HOSTING_NOTE =
-  "Domain & hosting billed through Dawson's Web Studio — one simple invoice.";
+  "Domain & hosting billed through Dawson's Web Studio, one simple invoice.";
